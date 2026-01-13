@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yogesh Nayi — Principal Consultant (PHP)</title>
+    <meta
+      name="description"
+      content="Resume of Yogesh Nayi, Principal Consultant with 13+ years in PHP, MySQL, and web platforms."
+    />
+    <style>
+      /* ---------- Base & Print ---------- */
+      :root {
+        --bg: #f7f7fb;
+        --ink: #1f2937;
+        --muted: #6b7280;
+        --accent: #2563eb;
+        --chip: #e5e7eb;
+      }
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        font: 14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+          Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: var(--ink);
+        background: var(--bg);
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .page {
+        max-width: 960px;
+        margin: 24px auto;
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 14px;
+        overflow: hidden;
+      }
+      header {
+        padding: 28px 32px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+      }
+      .avatar {
+        width: 92px;
+        height: 92px;
+        border-radius: 50%;
+        background: #ddd;
+        flex: 0 0 92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #555;
+      }
+      .title h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: 0.2px;
+      }
+      .title h2 {
+        margin: 6px 0 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+      .meta {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        color: var(--muted);
+      }
+      .meta span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 2.1fr 1fr;
+        gap: 28px;
+        padding: 24px 32px 32px;
+      }
+      section {
+        margin: 0 0 10px;
+      }
+      h3 {
+        font-size: 15px;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #111;
+      }
+
+      .item {
+        margin: 14px 0;
+      }
+      .item .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+      }
+      .role {
+        font-weight: 700;
+      }
+      .org {
+        color: var(--muted);
+      }
+      .date {
+        color: var(--muted);
+        font-size: 12px;
+        white-space: nowrap;
+      }
+      .bullets {
+        margin: 6px 0 0 18px;
+        padding: 0;
+      }
+      .bullets li {
+        margin: 5px 0;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .chip {
+        background: var(--chip);
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+
+      .card {
+        border: 1px solid #eee;
+        border-radius: 12px;
+        padding: 14px;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      footer {
+        padding: 12px 32px 28px;
+        border-top: 1px solid #eee;
+        color: var(--muted);
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .actions button {
+        appearance: none;
+        border: 1px solid #e5e7eb;
+        background: #fff;
+        border-radius: 10px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      .actions button:active {
+        transform: translateY(1px);
+      }
+
+      /* Print styles */
+      @media print {
+        body {
+          background: #fff;
+        }
+        .page {
+          box-shadow: none;
+          border-radius: 0;
+          margin: 0;
+          max-width: none;
+        }
+        header,
+        main,
+        footer {
+          padding: 0 0 0 0;
+        }
+        header {
+          padding-bottom: 8px;
+          border: 0;
+          border-bottom: 1px solid #ddd;
+        }
+        main {
+          grid-template-columns: 2fr 1fr;
+          gap: 16px;
+          padding-top: 10px;
+        }
+        .avatar {
+          display: none;
+        }
+        .actions {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page" id="page">
+      <header>
+        <div class="avatar" aria-hidden="true">YN</div>
+        <div class="title">
+          <h1>Yogesh Nayi</h1>
+          <h2>Principal Consultant — PHP / Web Platforms</h2>
+          <div class="meta">
+            <span>📍 India (IST)</span>
+            <span
+              >✉︎
+              <a href="mailto:youremail@example.com"
+                >youremail@example.com</a
+              ></span
+            >
+            <span>☎︎ +91-9XXXXXXXXX</span>
+            <span
+              >🔗
+              <a href="https://www.linkedin.com/in/yourhandle"
+                >linkedin.com/in/yourhandle</a
+              ></span
+            >
+            <span
+              >🌐
+              <a href="https://your-portfolio.example"
+                >your-portfolio.example</a
+              ></span
+            >
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- LEFT COLUMN -->
+        <section>
+          <h3>Summary</h3>
+          <div class="card">
+            <p>
+              Principal Consultant with 13+ years building reliable PHP/MySQL
+              platforms, REST APIs, and dashboards. Led teams delivering
+              high-availability, secure, and scalable solutions. Comfortable
+              across backend (Laravel, Symfony), frontend (JS/TS), and DevOps
+              basics (Docker, CI/CD). Actively exploring AWS and cybersecurity
+              features.
+            </p>
+          </div>
+
+          <h3>Experience</h3>
+          <div class="item">
+            <div class="top">
+              <div>
+                <div class="role">Principal Consultant (PHP)</div>
+                <div class="org">Your Company • Full-time</div>
+              </div>
+              <div class="date">Apr 2022 — Present</div>
+            </div>
+            <ul class="bullets">
+              <li>
+                Architected and delivered multi-tenant SaaS modules; reduced
+                page TTFB by ~35% via query tuning and caching.
+              </li>
+              <li>
+                Designed REST APIs consumed by mobile/web; established
+                versioning and automated contract tests.
+              </li>
+              <li>
+                Led 6 engineers; introduced code review rubric and CI checks
+                (PHP-CS-Fixer, PHPStan), cutting defects ~25%.
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div>
+                <div class="role">Senior Software Engineer → Tech Lead</div>
+                <div class="org">Previous Company</div>
+              </div>
+              <div class="date">Jul 2016 — Mar 2022</div>
+            </div>
+            <ul class="bullets">
+              <li>
+                Migrated legacy PHP 5.x app to PHP 8.x & Laravel; added
+                automated tests to reach 70% coverage.
+              </li>
+              <li>
+                Implemented payments, invoicing, and audit trails; improved
+                observability with structured logs.
+              </li>
+              <li>
+                Mentored juniors on secure coding (OWASP Top 10) and performance
+                profiling.
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div>
+                <div class="role">Software Engineer</div>
+                <div class="org">Earlier Company</div>
+              </div>
+              <div class="date">Jun 2012 — Jun 2016</div>
+            </div>
+            <ul class="bullets">
+              <li>
+                Built internal CMS and analytics dashboards with PHP, MySQL, and
+                vanilla JS.
+              </li>
+              <li>
+                Wrote ETL scripts to clean and import vendor feeds; reduced
+                manual ops by 80%.
+              </li>
+            </ul>
+          </div>
+
+          <h3>Selected Projects</h3>
+          <div class="item">
+            <div class="top">
+              <div class="role">OBD Scan Platform (PHP + Node.js)</div>
+              <div class="date">2024 — 2025</div>
+            </div>
+            <ul class="bullets">
+              <li>
+                Prototype to ingest OBD-II data, simulate test feeds, and
+                visualize metrics in a PHP dashboard.
+              </li>
+              <li>
+                Built role-based access and API tokens; added background workers
+                for batch processing.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- RIGHT COLUMN -->
+        <section>
+          <h3>Skills</h3>
+          <div class="chips">
+            <span class="chip">PHP 8.x</span>
+            <span class="chip">Laravel / Symfony</span>
+            <span class="chip">MySQL / MariaDB</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">JavaScript / TypeScript</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Git & CI/CD</span>
+            <span class="chip">AWS (learning)</span>
+            <span class="chip">Security Basics (OWASP)</span>
+          </div>
+
+          <h3>Education</h3>
+          <div class="card">
+            <div class="two-col">
+              <div>
+                <div class="role">B.E./B.Tech. in Computer Science</div>
+                <div class="org">Your University</div>
+              </div>
+              <div class="date">2012</div>
+            </div>
+            <ul class="bullets">
+              <li>
+                Relevant coursework: Data Structures, DBMS, Networks, Operating
+                Systems.
+              </li>
+            </ul>
+          </div>
+
+          <h3>Certifications</h3>
+          <div class="card">
+            <ul class="bullets">
+              <li>AWS Certified Cloud Practitioner (target)</li>
+              <li>Any PHP/Laravel certifications (optional)</li>
+            </ul>
+          </div>
+
+          <h3>Achievements</h3>
+          <div class="card">
+            <ul class="bullets">
+              <li>
+                Employee Spotlight: delivered zero-downtime deployment playbook
+                company-wide.
+              </li>
+              <li>
+                Mentored 10+ engineers across performance and secure coding
+                workshops.
+              </li>
+            </ul>
+          </div>
+
+          <h3>Interests</h3>
+          <div class="chips">
+            <span class="chip">Open Source</span>
+            <span class="chip">Cloud & Security</span>
+            <span class="chip">Automation</span>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div>Last updated: <span id="updated"></span></div>
+        <div class="actions">
+          <button onclick="window.print()" title="Save/Print as PDF">
+            🖨️ Save as PDF
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional: JSON-LD for better parsing on job portals that support it -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yogesh Nayi",
+        "jobTitle": "Principal Consultant",
+        "email": "youremail@example.com",
+        "url": "https://your-portfolio.example",
+        "sameAs": ["https://www.linkedin.com/in/yourhandle"],
+        "knowsAbout": [
+          "PHP",
+          "Laravel",
+          "Symfony",
+          "MySQL",
+          "APIs",
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "Docker",
+          "AWS"
+        ]
+      }
+    </script>
+    <script>
+      // Update timestamp automatically
+      (function () {
+        const el = document.getElementById("updated");
+        const d = new Date();
+        const pad = (n) => (n < 10 ? "0" : "") + n;
+        el.textContent = `${pad(d.getDate())}-${pad(
+          d.getMonth() + 1
+        )}-${d.getFullYear()}`;
+      })();
+    </script>
+  </body>
+</html>
