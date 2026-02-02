@@ -1,10 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Yogesh_Nayi_Senior_Backend_Engineer_Node_PHP_AWS_2026</title>
+    <title>
+      Principal Consultant - Backend & Platform Engineering (Node.js, PHP, AWS)
+    </title>
 
     <meta
       name="description"
@@ -63,15 +65,8 @@
       }
       body {
         margin: 0;
-        font:
-          14px/1.45 system-ui,
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          Helvetica,
-          Arial,
-          "Apple Color Emoji",
-          "Segoe UI Emoji";
+        font: 14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+          Arial, "Apple Color Emoji", "Segoe UI Emoji";
         color: var(--ink);
         background: var(--bg);
       }
@@ -92,8 +87,30 @@
         overflow: hidden;
       }
       header {
-        padding: 20px 32px;
+        padding: 28px 32px;
         border-bottom: 1px solid #eee;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+      }
+      .avatar-wrapper {
+        width: 92px;
+        height: 92px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #ddd;
+        flex: 0 0 92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #555;
+      }
+      .avatar-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       .title h1 {
@@ -138,22 +155,22 @@
       main {
         display: grid;
         grid-template-columns: 2.1fr 1fr;
-        gap: 24px;
-        padding: 20px 32px 24px;
+        gap: 28px;
+        padding: 24px 32px 32px;
       }
       section {
-        margin: 0 0 8px;
+        margin: 0 0 10px;
       }
       h3 {
-        font-size: 14px;
-        margin: 0 0 8px;
+        font-size: 15px;
+        margin: 0 0 10px;
         text-transform: uppercase;
         letter-spacing: 0.12em;
         color: #111;
       }
 
       .item {
-        margin: 10px 0;
+        margin: 14px 0;
       }
       .item .top {
         display: flex;
@@ -173,12 +190,11 @@
         white-space: nowrap;
       }
       .bullets {
-        margin: 4px 0 0 16px;
+        margin: 6px 0 0 18px;
         padding: 0;
       }
       .bullets li {
-        margin: 3px 0;
-        font-size: 13px;
+        margin: 5px 0;
       }
 
       .chips {
@@ -226,29 +242,10 @@
         transform: translateY(1px);
       }
 
-      /* .summary-header {
-        margin-top: 8px;
-      } */
-      .summary-header h3 {
-        margin: 0 0 6px;
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        color: #111;
-      }
-      .summary-header p {
-        margin: 0;
-        line-height: 1.5;
-        color: var(--ink);
-        font-size: 14px;
-      }
-
       /* Print styles */
       @media print {
         body {
           background: #fff;
-          transform: scale(0.9);
-          transform-origin: top left;
         }
         .page {
           box-shadow: none;
@@ -284,11 +281,22 @@
   <body>
     <div class="page" id="page">
       <header>
+        <div class="avatar-wrapper" id="avatar-wrapper">
+          <img
+            src="ysnayi-photo.png"
+            alt="Profile photo of Yogesh Nayi"
+            onerror="this.style.display='none'; this.parentNode.textContent='YN';"
+          />
+        </div>
         <div class="title">
           <h1>Yogesh Nayi</h1>
-          <h2>Senior Backend Engineer | Node.js | PHP | AWS</h2>
+          <h2>
+            Principal Consultant - Backend & Platform Engineering (Node.js, PHP,
+            AWS)
+          </h2>
+
           <div class="meta">
-            <span>📍 Ahmedabad, India</span>
+            <span>📍 Ahmedabad, India (IST)</span>
             <span
               >✉︎
               <a href="mailto:yogeshnayi@ymail.com"
@@ -310,46 +318,45 @@
             >
           </div>
         </div>
-        <br />
-        <div class="summary-header">
-          <h3>Professional Summary</h3>
-          <p>
-            Senior Backend Engineer with 13+ years experience, including 5+
-            years building Node.js microservices and cloud-native REST APIs on
-            AWS. Expertise in scalable backend architecture, system design, and
-            high-availability platforms.
-          </p>
-        </div>
       </header>
 
       <main>
         <!-- LEFT COLUMN -->
         <section>
-          <!-- EXPERIENCE SECTION -->
+          <h3>Summary</h3>
+          <div class="card">
+            <p>
+              Principal Consultant with 13+ years of experience building and
+              scaling backend and platform systems across Node.js, PHP, and AWS.
+              Strong focus on REST APIs, microservices, event-driven
+              architecture, and cloud-native design. Proven track record leading
+              teams, improving system reliability, and delivering secure,
+              high-availability solutions in enterprise environments.
+            </p>
+          </div>
+
           <h3>Experience</h3>
           <div class="item">
             <div class="top">
               <div>
                 <div class="role">Principal Consultant (Backend)</div>
-                <div class="org">Genpact</div>
+                <div class="org">Genpact • Full-time</div>
               </div>
               <div class="date">Oct 2023 — Dec 2025</div>
             </div>
             <ul class="bullets">
               <li>
-                Architected TypeScript-based Node.js (ExpressJS) and PHP
-                (Symfony) REST APIs on AWS serving 1M+ requests/day in scalable,
-                high-availability distributed systems.
+                Architected and led development of backend APIs using PHP
+                (Symfony, Zend) and Node.js (Express, NestJS) on AWS, with focus
+                on scalability, authentication, and performance optimization.
               </li>
               <li>
-                Led a team of 5 backend engineers for the photo-services
-                platform; improved release quality by 20% through structured
-                code reviews and engineering best practices.
+                Led a 3-engineer photo-services team; formalized code reviews,
+                improving release quality by 20%.
               </li>
               <li>
-                Delivered production-ready, zero-regression features through
-                close collaboration with frontend, QA, and product teams in an
-                Agile environment.
+                Partnered with frontend, QA, and product teams to deliver
+                features on time with zero regression.
               </li>
             </ul>
           </div>
@@ -358,21 +365,21 @@
             <div class="top">
               <div>
                 <div class="role">Senior Engineer</div>
-                <div class="org">Entrata India</div>
+                <div class="org">Entrata India, Pune, India</div>
               </div>
               <div class="date">May 2022 — Sep 2023</div>
             </div>
             <ul class="bullets">
               <li>
-                Built event-driven Node.js (NestJS) microservices with Kafka and
-                PostgreSQL on AWS for scalable tenant verification workflows
+                Led PHP and ReactJS app development for Resident Verify team.
               </li>
               <li>
-                Led PHP/ReactJS development for Resident Verify platform serving
-                50K+ users
+                Spearheaded Node.js-based RPR integration using Kafka and
+                PostgreSQL on AWS, enabling scalable, event-driven tenant
+                verification workflows.
               </li>
               <li>
-                Conducted technical interviews and mentored junior developers
+                Conducted technical interviews and managed team interactions.
               </li>
             </ul>
           </div>
@@ -381,22 +388,21 @@
             <div class="top">
               <div>
                 <div class="role">Senior Analyst</div>
-                <div class="org">ValueLabs</div>
+                <div class="org">ValueLabs, Hyderabad, India</div>
               </div>
               <div class="date">Feb 2020 — Apr 2022</div>
             </div>
             <ul class="bullets">
               <li>
-                Developed PHP (CodeIgniter), Node.js, and ReactJS applications
-                with REST API architecture
+                Programmed PHP CodeIgniter, ReactJS, and Python-based
+                applications.
               </li>
               <li>
-                Contributed to Swagger API documentation and system architecture
-                design
+                Contributed to Architecture team and REST API Swagger
+                development.
               </li>
               <li>
-                Managed team of 5 engineers using Agile/Scrum methodologies,
-                handled client communication and delivery
+                Managed a team of 5; client communication; Agile delivery.
               </li>
             </ul>
           </div>
@@ -405,18 +411,15 @@
             <div class="top">
               <div>
                 <div class="role">Senior Software Engineer</div>
-                <div class="org">Analytix Business Solution</div>
+                <div class="org">I-Serve Online Mall, Malaysia</div>
               </div>
-              <div class="date">Apr 2016 — Jul 2019</div>
+              <div class="date">Aug 2019 — Sep 2019</div>
             </div>
             <ul class="bullets">
+              <li>Crafted Laravel-based applications using PHP and MySQL.</li>
               <li>
-                Implemented CI/CD pipelines, unit testing, and DevOps automation
-                using PHP and Django
-              </li>
-              <li>
-                Led team development, code reviews, and technical training
-                programs
+                Collaborated with project teams; focused on dedicated Laravel
+                development.
               </li>
             </ul>
           </div>
@@ -424,17 +427,42 @@
           <div class="item">
             <div class="top">
               <div>
+                <div class="role">Senior Software Engineer</div>
+                <div class="org">
+                  Analytix Business Solution, Ahmedabad, India
+                </div>
+              </div>
+              <div class="date">Apr 2016 — Jul 2019</div>
+            </div>
+            <ul class="bullets">
+              <li>
+                Introduced CI/CD and automation using PHP, Python, and Django.
+              </li>
+              <li>
+                Managed a team, conducted code reviews, and provided training.
+              </li>
+              <li>Delivered custom development within Agile teams.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="top">
+              <div>
                 <div class="role">Software Engineer</div>
-                <div class="org">Milestone Internet Marketing</div>
+                <div class="org">
+                  Milestone Internet Marketing, Ahmedabad, India
+                </div>
               </div>
               <div class="date">May 2013 — Mar 2016</div>
             </div>
             <ul class="bullets">
               <li>
-                Built responsive websites using PHP, MySQL, and JavaScript
+                Collaborated with design and development teams to create
+                websites.
               </li>
               <li>
-                Mentored junior developers and ensured code quality standards
+                Mentored junior coders; ensured site functionality; assisted
+                design with coding.
               </li>
             </ul>
           </div>
@@ -443,53 +471,47 @@
             <div class="top">
               <div>
                 <div class="role">PHP Developer</div>
-                <div class="org">Time IT Solutions</div>
+                <div class="org">Time IT Solutions, Gandhinagar, India</div>
               </div>
               <div class="date">Apr 2012 — Apr 2013</div>
             </div>
             <ul class="bullets">
               <li>
-                Developed REST APIs for mobile applications using PHP and MySQL
+                Developed APIs for mobile apps; gained proficiency in PHP, iOS,
+                and Android.
               </li>
+              <li>Owned Web API development and functional specifications.</li>
             </ul>
           </div>
 
-          <!-- KEY PROJECTS SECTION -->
-          <h3>Key Projects</h3>
+          <h3>Selected Projects</h3>
           <div class="item">
-            <div class="role">Photo Services API (Genpact)</div>
             <ul class="bullets">
               <li>
-                Designed distributed architecture handling 1M+ daily requests
-                with 99.9% uptime
+                <strong>Shutterfly (Genpact)</strong> — Architected secure
+                photo-service APIs, reducing downtime by 20%.
               </li>
               <li>
-                Reduced system downtime by 20% through performance optimization
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <div class="role">Tenant Verification System (Entrata)</div>
-            <ul class="bullets">
-              <li>
-                Built real-time verification workflows processing 10K+
-                applications monthly
+                <strong>Resident Verify (Entrata)</strong> — Integrated RPR with
+                Node.js & Kafka, improving tenant onboarding speed.
               </li>
               <li>
-                Implemented event-driven messaging for seamless data
-                synchronization
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <div class="role">Enterprise Recognition Platform (ValueLabs)</div>
-            <ul class="bullets">
-              <li>
-                Delivered employee engagement platform for 500+ enterprise users
+                <strong>Achievers (ValueLabs)</strong> — Built scalable
+                PHP/MySQL modules for enterprise recognition, accelerating
+                delivery by 15%.
               </li>
               <li>
-                Integrated third-party APIs with comprehensive documentation
-                standards
+                <strong>DASH Platforms (Analytix Business Solutions)</strong> —
+                Interactive dashboards in PHP/JS, reducing reporting time by
+                20%.
+              </li>
+              <li>
+                <strong>MediaConnect360 (Milestone)</strong> — Engineered
+                content integrations, streamlining distribution for 50+ clients.
+              </li>
+              <li>
+                <strong>Mobile App API (Time IT Solutions)</strong> — RESTful
+                APIs and backend services, cutting response times by 30%.
               </li>
             </ul>
           </div>
@@ -497,76 +519,105 @@
 
         <!-- RIGHT COLUMN -->
         <section>
-          <!-- TECHNICAL SKILLS SECTION -->
-          <h3>Technical Skills</h3>
-          <div class="item">
-            <div class="role">Languages & Frameworks</div>
-            <ul class="bullets">
-              <li>Node.js (5+ years), Express.js, NestJS, TypeScript</li>
-              <li>PHP (13+ years), Laravel, Symfony, CodeIgniter</li>
-              <li>JavaScript (10+ years), React.js (5+ years)</li>
-            </ul>
-          </div>
-          <div class="item">
-            <div class="role">Databases & Cloud</div>
-            <ul class="bullets">
-              <li>PostgreSQL (4+ years), MySQL (12+ years), MongoDB, Redis</li>
-              <li>AWS (5+ years): EC2, Lambda, S3, RDS, ECS, API Gateway</li>
-              <li>Docker (8+ years), Kafka (2+ years), CI/CD</li>
-            </ul>
-          </div>
-          <div class="item">
-            <div class="role">Architecture & APIs</div>
-            <ul class="bullets">
-              <li>REST API Design, Microservices Architecture, API Gateway</li>
-              <li>
-                Event-Driven Architecture, Distributed Systems, TDD, Unit
-                Testing
-              </li>
-              <li>System Design, Security (OWASP), Agile/Scrum</li>
-            </ul>
+          <h3>Skills</h3>
+          <div class="chips">
+            <span class="chip">Node.js, TypeScript, Express.js, NestJS</span>
+            <span class="chip">PHP 8.x (Laravel, Symfony, CodeIgniter)</span>
+            <span class="chip"
+              >REST APIs, Microservices, Event-Driven Architecture</span
+            >
+            <span class="chip"
+              >MongoDB, PostgreSQL, MySQL, DynamoDB, Redis</span
+            >
+            <span class="chip">AWS (EC2, ECS, Lambda, S3, RDS)</span>
+            <span class="chip">Docker, CI/CD, GitHub, Splunk</span>
+            <span class="chip">React.js (API-driven UI)</span>
+            <span class="chip">Jira, Agile, HTML, CSS</span>
+            <span class="chip">Security (OWASP, Auth, API Hardening)</span>
           </div>
 
-          <!-- EDUCATION SECTION -->
           <h3>Education</h3>
-          <div class="item">
-            <div class="role">MCA, Computer Applications</div>
-            <div class="org">Sikkim Manipal University • 2015</div>
-          </div>
-          <div class="item">
-            <div class="role">BCA, Computer Applications</div>
-            <div class="org">
-              Hemchandracharya North Gujarat University • 2012
-            </div>
+          <div class="card">
+            <ul class="bullets">
+              <li>
+                <strong>MCA</strong> — Sikkim Manipal University, India (2015)
+              </li>
+              <li>
+                <strong>BCA</strong> — Hemchandracharya North Gujarat
+                University, India (2012)
+              </li>
+            </ul>
           </div>
 
-          <!-- CERTIFICATIONS SECTION -->
           <h3>Certifications</h3>
-          <div class="item">
+          <div class="card">
             <ul class="bullets">
-              <li>PHP, Node.js, React.js</li>
               <li>
-                AWS Cloud Practitioner, GCP Essential Training, Apache Kafka,
-                Blockchain
+                <strong>Cloud & Tech</strong> — AWS Cloud Practitioner, GCP
+                Essential Training, Apache Kafka, Blockchain
               </li>
-              <li>Agentic AI, Generative AI, Data Science</li>
+              <li><strong>Development</strong> — PHP, Node.js, React.js</li>
+              <li>
+                <strong>Emerging Tech</strong> — Agentic AI, Generative AI, Data
+                Science
+              </li>
             </ul>
+          </div>
+
+          <h3>Achievements</h3>
+          <div class="card">
+            <ul class="bullets">
+              <li>Improved API response time by 30%.</li>
+              <li>
+                Reduced vulnerabilities by 40% via proactive security reviews.
+              </li>
+              <li>
+                Recognized in Employee Spotlight for a zero-downtime deployment
+                playbook adopted company-wide.
+              </li>
+              <li>Mentored 10+ engineers, boosting team delivery speed.</li>
+            </ul>
+          </div>
+
+          <!-- ✅ New Community & Volunteering section -->
+          <h3>Community & Volunteering</h3>
+          <div class="card">
+            <ul class="bullets">
+              <li>
+                <strong>AWS Ahmedabad User Group</strong> — Active volunteer and
+                community contributor. Participated in AWS Community Day events
+                and cloud architecture workshops focusing on cost optimization,
+                serverless design, and DevOps automation.
+              </li>
+              <li>
+                <strong>Laravel Ahmedabad Community</strong> — Regular meetup
+                attendee exploring Laravel best practices, performance tuning,
+                and full-stack integrations with modern tools.
+              </li>
+            </ul>
+          </div>
+
+          <h3>Interests</h3>
+          <div class="chips">
+            <span class="chip">Open Source</span>
+            <span class="chip">Cloud & Security</span>
+            <span class="chip">Artificial Intelligence</span>
           </div>
         </section>
       </main>
 
-      <!-- <footer>
+      <footer>
         <div>Last updated: <span id="updated"></span></div>
         <div class="actions">
           <button
             onclick="window.print()"
             title="Save/Print as PDF"
-            aria-label="Save or print this resume as PDF"
+            aria-label="Save or print this résumé as PDF"
           >
             🖨️ Save as PDF
           </button>
         </div>
-      </footer> -->
+      </footer>
     </div>
 
     <!-- Structured data (JSON-LD) -->
@@ -629,7 +680,7 @@
         const d = new Date();
         const pad = (n) => (n < 10 ? "0" : "") + n;
         el.textContent = `${pad(d.getDate())}-${pad(
-          d.getMonth() + 1,
+          d.getMonth() + 1
         )}-${d.getFullYear()}`;
       })();
 
